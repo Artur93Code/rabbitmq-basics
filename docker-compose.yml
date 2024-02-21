@@ -1,0 +1,8 @@
+#docker compose up -d
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "15672:15672" #port for management panel (login: guest, password: guest)
+      - "5672:5672"
